@@ -10,15 +10,63 @@
     <meta property="og:description" content="Usando detectores de movimento para a criação de semáforos dinâmicos">
     <meta name="theme-color" content="#5fa8d3">
 
-    <title>Sprint 2 - DontStop</title>
+    <title>DontStop</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- my css -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
 </head>
 
 <body>
 
-    <header>
-        <nav class="header-menu">
+    <header class="container-fluid nav-menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo-menu" href="#">
+                    Dont Stop
+                </a>
+                <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-text-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#problemas">Problemas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#solução">Solução</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#impactos">Impactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#estatísticas">Estatísticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#integrantes">Integrantes</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <i class="bi bi-cart mt-2"></i>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Carrinho</a>
+                        </li>
+                        <i class="bi bi-person-circle mt-2 ms-2"></i>
+                        <li>
+                            <a href="#" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="header-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#problemas">Problemas</a></li>
@@ -27,67 +75,96 @@
                 <li><a href="#estatísticas">Estatísticas</a></li>
                 <li><a href="#integrantes">Integrantes</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
-
-    <div class="dobra" id="home">
-        <h1>DontStop</h1>
-        <h2>Usando detectores de movimento para a criação de semáforos dinâmicos</h2>
-    </div>
-
-
-    <div class="dobra" id="problemas">
-        <img src="./images/image 2.png" alt="Foto de um engarrafamento com vários carros parados">
-        <h2>Nossa solução abrange os seguintes problemas em relação ao trânsito:</h2>
-
-        <div class="ícones-problemas">
-            <img src="./images/icons/icon-accident.svg" alt="Ícone simbolizando acidente de trânsito">
-            <img src="./images/icons/icon-thunderstorm.svg" alt="Ícone simbolizando uma tempestade">
-            <img src="./images/icons/icon-add-time.svg" alt="Ícone simbolizando a adição de tempo">
-            <img src="./images/icons/icon-traffic-light.svg" alt="Ícone simbolizando um semáforo de trânsito">
-            <h3>Acidentes de trânsito</h3>
-            <h3>Clima ruim para transitar</h3>
-            <h3>Picos de tráfego</h3>
-            <h3>Radares desativados</h3>
-        </div>
-    </div>
-
-
-    <div class="dobra" id="solução">
-        <img src="./images/image 4.png" alt="Foto de um semáforo, com uma câmera acoplada ao lado">
-        <div><p>Propõe-se a utilização de um avançado sistema de coleta de dados integrado aos semáforos e sensores de movimento, com o intuito de detectar tendências de horário e fluxo de tráfego. Esse sistema permite a liberação de vias com maior congestionamento em momentos específicos, utilizando sensores de movimento para determinar a demanda de diferentes vias e pedestres.</p>
-        <p>Por meio da implementação destes sensores, é possível obter informações em tempo real sobre o fluxo de veículos em determinadas áreas. Esses dados são então processados e sintetizados para que seja enviado a um órgão regulador de trânsito para uso futuro, assim como para outros semáforos na rede que podem se adaptar com base nesta informação, aumentando ou diminuindo a prioridade de vias relacionadas.</p>
-        <p>A conectividade dos semáforos através de uma rede única é essencial para este processo, pois permite que as rotas se adaptem não apenas com base nas necessidades imediatas, mas em outros fatores distantes, como um acidente em uma via alternativa ou uma rua fechada para um evento em uma região próxima.</p>
-        <p>Além disso, esse sistema integrado permite a coleta de um grande volume de dados, que pode ser utilizado para análises posteriores e tomadas de decisão estratégicas. Os gestores de tráfego podem acessar informações detalhadas sobre o fluxo de veículos, identificar gargalos recorrentes e planejar intervenções adequadas para melhorar a mobilidade urbana.</p>
-        <p>Ao adotar essa solução tecnológica, as cidades podem obter benefícios significativos, tais como redução dos congestionamentos, diminuição das emissões de poluentes e melhoria da eficiência do sistema viário. A combinação de sensores, análise de dados e semáforos inteligentes oferece uma abordagem inteligente e adaptável para o gerenciamento do tráfego, impulsionando a mobilidade urbana e a qualidade de vida dos cidadãos.</p></div>
-    </div>
-
-
-    <div class="dobra" id="impactos">
-        <div class="box">
-            <div class="boxtexto ladoesq">
-                <p>Impactos negativos do problema:</p>
-                <ul>
-                    <li>Estresse no trânsito.</li>
-                    <li>Tempo gasto em congestionamentos.</li>
-                    <li>Emissão adicional de gás carbônico.</li>
-                    <li>Maior risco de acidentes de trânsito.</li>
-                    <li>Maiores tempos de viagem.</li>
-                </ul>
+    <main class="container-fluid dobra " id="main">
+        <div class="container text-center">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="col-12">
+                    <h1 class="display-1">DontStop</h1>
+                    <h4 class="display-5">Usando detectores de movimento para a criação de semáforos dinâmicos</h4>
+                </div>
             </div>
-            <div class="boxtexto">
-                <p>Como resolver:</p>
-                <ul>
-                    <li>Priorização automática de vias congestionadas.</li>
-                    <li>Diminuir o tempo de viagem, levando a menor emissão de gás carbônico.</li>
-                    <li>Detectar e se adaptar a acidentes e "trânsito fantasma".</li>
-                    <li>Menos interrupções desnecessárias do semáforo.</li>
-                    <li>Facilitar a coleta de dados.</li>
-                </ul>
+        </div>
+    </main>
+
+
+    <div class="container-fluid" id="problemas">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <h2 class="mt-4">Nossa solução abrange os seguintes problemas em relação ao trânsito:</h2>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row ícones-problemas">
+                    <div class="col-6 col-md-3"><img src="./images/icons/icon-accident.svg"
+                            alt="Ícone simbolizando acidente de trânsito">
+                        <p class="my-4">Acidentes de trânsito</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="./images/icons/icon-thunderstorm.svg" alt="Ícone simbolizando uma tempestade">
+                        <p class="my-4">Clima ruim para transitar</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="./images/icons/icon-add-time.svg" alt="Ícone simbolizando a adição de tempo">
+                        <p class="my-4">Picos de tráfego</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="./images/icons/icon-traffic-light.svg"
+                            alt="Ícone simbolizando um semáforo de trânsito">
+                        <p class="my-4">Radares desativados</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <section id="solução" class="container-fluid solução">
+        <div class="row d-flex align-items-center ">
+            <div class="col-12 col-md-7 col-lg-6 p-0">
+                <img src="./images/image 4.png" alt="Foto de um semáforo, com uma câmera acoplada ao lado"
+                    class="img-fluid imagem-h">
+            </div>
+            <div class="col-12 col-md-5 col-lg-6 my-4">
+                <h3 class="mb-5 ">Propõe-se um sistema de coleta de dados com sensores em semáforos para otimizar o tráfego,
+                    adaptando-se
+                    às demandas em tempo real e oferecendo análise de dados para melhorias na mobilidade urbana.
+                </h3>
+                <h3>
+                    Esse sistema permite ajustes baseados em fatores locais, como acidentes, promovendo
+                    eficiência e
+                    coleta de
+                    dados valiosos para intervenções estratégicas.
+                </h3>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid dobra impactos" id="impactos">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-6"> 
+                <h3 class="my-4">Impactos negativos do problema:</h3>
+                    <p>Estresse no trânsito.</p><i class="bi bi-dot"></i>
+                    <p>Tempo gasto em congestionamentos.</p>
+                    <p>Emissão adicional de gás carbônico.</p>
+                    <p>Maior risco de acidentes de trânsito.</p>
+                    <p>Maiores tempos de viagem.</p>
+                
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="my-4">Como resolver:</h3>
+                    <p>Priorização automática de vias congestionadas.</p>
+                    <p>Diminuir o tempo de viagem, levando a menor emissão de gás carbônico.</p>
+                    <p>Detectar e se adaptar a acidentes e "trânsito fantasma".</p>
+                    <p>Menos interrupções desnecessárias do semáforo.</p>
+                    <p>Facilitar a coleta de dados.</p>
+                
+            </div>
+        </div>
+    </section>
 
 
     <div class="dobra" id="estatísticas">
@@ -117,32 +194,35 @@
                 </div>
             </div>
         </div>
-        <img src="./images/transito-de-cima.jpg" alt="Imagem aérea de uma intersecção de uma avenida na China" class="imglado">
+        <img src="./images/transito-de-cima.jpg" alt="Imagem aérea de uma intersecção de uma avenida na China"
+            class="imglado">
         <img src="./images/triângulo.svg" alt="Decoração separando áreas" class="bottomsep">
     </div>
 
 
     <div class="dobra" id="integrantes">
-        <h3>DontStop é um projeto criado por:</h3>
-        <div class="integrante">
-            <img src="./images/portraits/Cassio Valezzi.png" alt="Foto de Cassio Valezzi">
-            <p>Cassio Valezzi</p>
-        </div>
-        <div class="integrante">
-            <img src="./images/portraits/Octávio Hernandez.png" alt="Foto de Octávio Hernandez">
-            <p>Octávio Hernandez</p>
-        </div>
-        <div class="integrante">
-            <img src="./images/portraits/Eduardo Peres.png" alt="Foto de perfil padrão, em branco">
-            <p>Eduardo Peres</p>
-        </div>
-        <div class="integrante">
-            <img src="./images/portraits/Italo de Souza.png" alt="Foto de Italo de Souza">
-            <p>Italo de Souza</p>
-        </div>
-        <div class="integrante">
-            <img src="./images/portraits/Rafael Perussi.png" alt="Foto de Rafael Perussi">
-            <p>Rafael Perussi</p>
+        <h3 class="text-center">DontStop é um projeto criado por:</h3>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+                    <img src="./images/portraits/Cassio Valezzi.png" alt="Foto de Cassio Valezzi" class="img-fluid">
+                    <p>Cassio Valezzi</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+                    <img src="./images/portraits/Octávio Hernandez.png" alt="Foto de Octávio Hernandez"
+                        class="img-fluid">
+                    <p>Octávio Hernandez</p>
+                </div>
+                <div class="w-100 d-md-none"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+                    <img src="./images/portraits/Italo de Souza.png" alt="Foto de Italo de Souza" class="img-fluid">
+                    <p>Italo de Souza</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <img src="./images/portraits/Rafael Perussi.png" alt="Foto de Rafael Perussi" class="img-fluid">
+                    <p>Rafael Perussi</p>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -10,25 +10,20 @@
     font-weight: normal;
 
     text-decoration: none;
-    color: #EFF4EF;
+    color: #EFF4EF !important;
+}
+.nav-menu {
+
+    background-color: #5fa8d3;
+    z-index: 1; /* Conserta um bug que deixava as imagens dos ícones
+                   passarem por cima do header por conta do "filter" */
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
-h1 {
-    font-size: 6em;
-    font-weight: bold;
-}
 
-h2 {
-    font-size: 2em;
-}
 
-h3 {
-    font-size: 1.5em;
-}
+
+
 
 .dobra {
     width: 100%;
@@ -37,15 +32,9 @@ h3 {
 
 
 
-#home {
+#main {
     background-image: url(../images/pexels-scott-webb-136739.jpg);
     background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     text-shadow: -1px -1px 4px black, 1px 1px 4px black;
 }
 
@@ -86,30 +75,17 @@ h3 {
 
 
 
-#solução {
+.solução {
     background-color: #62B6CB;
-
-    display: flex;
 }
 
-#solução img {
-    width: 40%;
-    object-fit: cover;
+.imagem-h {
+    width: 70vh;
 }
 
-#solução p {
-    font-size: 1.3vw;
-    padding: 3% 5% 0;
-}
-
-
-
-#impactos {
+.impactos {
     background-image: url(../images/pexels-luis-quintero-1587097.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .box {
@@ -122,6 +98,9 @@ h3 {
     justify-content: space-evenly;
     width: 65%;
     font-size: 1.5vw;
+}
+.bg-color-box{
+    background-color: #5FA8D366;
 }
 
 .box ul+ol {
@@ -223,3 +202,4 @@ h3 {
     align-self: flex-end;
     flex-direction: row-reverse;
 }
+
