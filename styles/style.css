@@ -2,8 +2,8 @@
 @import url(../fonts/SF-Pro-Text-Bold.otf);
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
     font-family: 'SF Pro Text', sans-serif;
@@ -12,10 +12,12 @@
     text-decoration: none;
     color: #EFF4EF !important;
 }
+
 .nav-menu {
 
     background-color: #5fa8d3;
-    z-index: 1; /* Conserta um bug que deixava as imagens dos ícones
+    z-index: 1;
+    /* Conserta um bug que deixava as imagens dos ícones
                    passarem por cima do header por conta do "filter" */
 }
 
@@ -24,13 +26,13 @@
 
 
 
-
-.dobra {
-    width: 100%;
+.container-main {
     height: 100vh;
 }
 
-
+.container-text-h {
+    height: 70vh;
+}
 
 #main {
     background-image: url(../images/pexels-scott-webb-136739.jpg);
@@ -38,39 +40,14 @@
     text-shadow: -1px -1px 4px black, 1px 1px 4px black;
 }
 
-#problemas {
+.problemas {
     background-color: #5FA8D3;
-    text-align: center;
+
 }
 
-#problemas h2 {
-    padding: 0 25px;
-    margin-bottom: 5%;
-}
-
-#problemas > img {
-    width: 100%;
-    height: 35%; /* calculado pelos valores do protótipo */
-    margin-bottom: 5%;
-}
-
-.ícones-problemas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 10%;
-}
-
-.ícones-problemas img {
-    width: 15%;
-    margin: 0% 5% 2%;
+.ícones-problemas-img {
+    width:70%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.ícones-problemas h3 {
-    width: 25%;
 }
 
 
@@ -99,7 +76,8 @@
     width: 65%;
     font-size: 1.5vw;
 }
-.bg-color-box{
+
+.bg-color-box {
     background-color: #5FA8D366;
 }
 
@@ -118,14 +96,14 @@
     width: 50%;
 }
 
-.boxtexto > p {
+.boxtexto>p {
     padding-bottom: 20px;
 }
 
 
 
-#estatísticas {
-    display: flex;
+.estatísticas {
+    background-color: #5fa8d3;
 }
 
 .imglado {
@@ -194,7 +172,7 @@
     justify-content: space-between;
 }
 
-.integrante > img {
+.integrante>img {
     width: 16vh;
 }
 
@@ -202,4 +180,3 @@
     align-self: flex-end;
     flex-direction: row-reverse;
 }
-
