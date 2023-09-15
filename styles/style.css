@@ -14,7 +14,7 @@
 }
 
 .nav-menu {
-
+    box-shadow: 2px 2px 7px #5f5e5e;
     background-color: #5fa8d3;
     z-index: 1;
     /* Conserta um bug que deixava as imagens dos ícones
@@ -31,14 +31,16 @@
 }
 
 .container-text-h {
-    height: 70vh;
+    height: 100vh;
 }
 
-#main {
+.main {
     background-image: url(../images/pexels-scott-webb-136739.jpg);
     background-size: cover;
-    text-shadow: -1px -1px 4px black, 1px 1px 4px black;
 }
+.borda-no-texto {
+    text-shadow: 4px 1px 4px #000;/* Espaçamento interno para que a borda não toque diretamente no texto */
+  }
 
 .problemas {
     background-color: #5FA8D3;
@@ -46,7 +48,7 @@
 }
 
 .ícones-problemas-img {
-    width:70%;
+    width: 50%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -57,8 +59,10 @@
 }
 
 .imagem-h {
-    width: 70vh;
+    height: 100vh;
 }
+
+
 
 .impactos {
     background-image: url(../images/pexels-luis-quintero-1587097.jpg);
@@ -69,46 +73,20 @@
     border: 4px solid #1B4965;
     border-radius: 12px;
     background-color: #5FA8D366;
-    padding: 2.5%;
     backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: space-evenly;
-    width: 65%;
-    font-size: 1.5vw;
+    
 }
 
 .bg-color-box {
     background-color: #5FA8D366;
 }
 
-.box ul+ol {
+.box ul {
     list-style: square;
 }
 
-.ladoesq {
-    padding-right: 5%;
-    margin-right: 5%;
-    border-right: 2px solid #1B496560;
-}
-
-.boxtexto {
-    /* border-right: 2px solid #1B496560; */
-    width: 50%;
-}
-
-.boxtexto>p {
-    padding-bottom: 20px;
-}
-
-
-
 .estatísticas {
     background-color: #5fa8d3;
-}
-
-.imglado {
-    width: 35%;
-    object-fit: cover;
 }
 
 .wrapper {
@@ -127,49 +105,23 @@
     justify-content: space-around;
 }
 
-.estatística img {
-    width: 15%;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.estatexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;
-}
-
-.estatexto p:nth-child(odd) {
-    font-size: 1.2vw;
-}
-
-.bottomsep {
-    position: absolute;
-    width: 100%;
-    align-self: self-end;
-}
 
 
-
-#integrantes {
+.integrantes {
     background-color: #62b6cb;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 3% 3% 0;
-    font-size: 2vw;
+    
 }
 
-#integrantes h3 {
-    align-self: center;
-}
+
 
 .integrante {
     display: flex;
     width: 30vw;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .integrante>img {
@@ -179,4 +131,8 @@
 .integrante:nth-child(odd) {
     align-self: flex-end;
     flex-direction: row-reverse;
+}
+
+.svg-icons{
+    height: 3.5vw;
 }

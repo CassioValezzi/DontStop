@@ -21,16 +21,20 @@
 
 <body>
 
-    <header class="container-fluid nav-menu">
-        <nav class="navbar navbar-expand-lg">
+    <header class="container-fluid nav-menu position-absolute top-0 start-50 translate-middle-x">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container">
-                <a class="navbar-brand logo-menu" href="#">
+                <a class="navbar-brand logo-menu " href="#">
                     Dont Stop
                 </a>
                 <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <i class="bi bi-text-right"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -56,11 +60,7 @@
                     <ul class="navbar-nav ms-auto">
                         <i class="bi bi-cart mt-2"></i>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Carrinho</a>
-                        </li>
-                        <i class="bi bi-person-circle mt-2 ms-2"></i>
-                        <li>
-                            <a href="#" class="nav-link">Login</a>
+                            <a href="#" class="nav-link"></a>
                         </li>
                     </ul>
                 </div>
@@ -78,12 +78,12 @@
         </nav> -->
     </header>
 
-    <main class="container-fluid container-main " id="main">
+    <main class="container-fluid container-main main" id="main">
         <div class="container text-center">
             <div class="position-absolute top-50 start-50 translate-middle">
                 <div class="col-12">
-                    <h1 class="display-1">DontStop</h1>
-                    <h4 class="display-5">Usando detectores de movimento para a criação de semáforos dinâmicos</h4>
+                    <h1 class="display-1 mb-4 borda-no-texto">DontStop</h1>
+                    <h4 class="fs-1 borda-no-texto">Usando detectores de movimento para a criação de semáforos dinâmicos</h4>
                 </div>
             </div>
         </div>
@@ -96,29 +96,29 @@
                 <h2 class="my-5">Nossa solução abrange os seguintes problemas em relação ao trânsito:</h2>
             </div>
             <div class="col-12 col-md-12 mt-4">
-                <div class="row ícones-problemas">
-                    <div class="col-6 col-md-3">
+                <div class="row ">
+                    <div class="col-12 col-md-3">
                         <img class="ícones-problemas-img" src="./images/icons/icon-accident.svg"
                             alt="Ícone simbolizando acidente de trânsito">
                         <h3 class="my-4">Acidentes de trânsito</h3>
-   
+
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-3">
                         <img class="ícones-problemas-img" src="./images/icons/icon-thunderstorm.svg"
                             alt="Ícone simbolizando uma tempestade">
                         <h3 class="my-4">Clima ruim para transitar</h3>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-3">
                         <img class="ícones-problemas-img" src="./images/icons/icon-add-time.svg"
                             alt="Ícone simbolizando a adição de tempo">
                         <h3 class="my-4">Picos de tráfego</h3>
-        
+
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-3">
                         <img class="ícones-problemas-img" src="./images/icons/icon-traffic-light.svg"
                             alt="Ícone simbolizando um semáforo de trânsito">
                         <h3 class="my-4">Radares desativados</h3>
-   
+
                     </div>
                 </div>
             </div>
@@ -127,46 +127,55 @@
 
 
     <section id="solução" class="container-fluid solução">
-        <div class="row d-flex align-items-center ">
+        <div class="row d-flex align-items-center">
             <div class="col-12 col-md-7 col-lg-6 p-0">
                 <img src="./images/image 4.png" alt="Foto de um semáforo, com uma câmera acoplada ao lado"
-                    class="img-fluid imagem-h">
+                    class="img-fluid imagem-h ">
             </div>
-            <div class="col-12 col-md-5 col-lg-5 my-4">
-                <h3 class="mb-5 ">Propõe-se um sistema de coleta de dados com sensores em semáforos para otimizar o
+            <div class="col-12 col-md-5 col-lg-5 my-4 p-4">
+                <p class="mb-4 fs-6 fs-4 ">Propõe-se um sistema de coleta de dados com sensores em semáforos para
+                    otimizar o
                     tráfego,
                     adaptando-se
                     às demandas em tempo real e oferecendo análise de dados para melhorias na mobilidade urbana.
-                </h3>
-                <h3>
+                </p>
+                <p class="fs-6 fs-6 fs-4 ">
                     Esse sistema permite ajustes baseados em fatores locais, como acidentes, promovendo
                     eficiência e
                     coleta de
                     dados valiosos para intervenções estratégicas.
-                </h3>
+                </p>
 
             </div>
         </div>
     </section>
 
 
-    <section class="container-fluid impactos" id="impactos">
-        <div class="row container-text-h ">
+    <section class="container-fluid impactos p-5" id="impactos">
+
+        <div class="row box p-5">
             <div class="col-12 col-md-6 ">
-                <h3 class="my-4 text-center">Impactos negativos do problema:</h3>
-                <p>Estresse no trânsito.</p><i class="bi bi-dot"></i>
-                <p>Tempo gasto em congestionamentos.</p>
-                <p>Emissão adicional de gás carbônico.</p>
-                <p>Maior risco de acidentes de trânsito.</p>
-                <p>Maiores tempos de viagem.</p>
+                <ul class="my-5 fs-4 fs-2">
+                    <h3 class="text-center mb-4">
+                        Impactos negativos do problema:
+                    </h3>
+                    <li class="fs-6 fs-4">Estresse no trânsito.</li>
+                    <li class="fs-6 fs-4">Tempo gasto em congestionamentos.</li>
+                    <li class="fs-6 fs-4">Emissão adicional de gás carbônico.</li>
+                    <li class="fs-6 fs-4">Maior risco de acidentes de trânsito.</li>
+                    <li class="fs-6 fs-4">Maiores tempos de viagem.</li>
+                </ul>
             </div>
             <div class="col-12 col-md-6 ">
-                <h3 class="my-4 text-center">Como resolver:</h3>
-                <p>Priorização automática de vias congestionadas.</p>
-                <p>Diminuir o tempo de viagem, levando a menor emissão de gás carbônico.</p>
-                <p>Detectar e se adaptar a acidentes e "trânsito fantasma".</p>
-                <p>Menos interrupções desnecessárias do semáforo.</p>
-                <p>Facilitar a coleta de dados.</p>
+                <ul class="my-5 ">
+                    <h3 class="text-center mb-4">Como resolver:</h3>
+                    <li class="fs-6 fs-4">Priorização automática de vias congestionadas.</li>
+                    <li class="fs-6 fs-4">Diminuir o tempo de viagem, levando a menor emissão de gás carbônico.</li>
+                    <li class="fs-6 fs-4">Detectar e se adaptar a acidentes e "trânsito fantasma".</li>
+                    <li class="fs-6 fs-4">Menos interrupções desnecessárias do semáforo.</li>
+                    <li class="fs-6 fs-4">Facilitar a coleta de dados.</li>
+                </ul>
+
             </div>
         </div>
     </section>
@@ -174,77 +183,81 @@
 
     <div class="container-fluid estatísticas" id="estatísticas">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="wrappe">
-                    <div class="col">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="281" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
+            <div class="col-12 col-md-5 col-lg-8">
+                <div class="wrappe mt-5">
+                    <div class="row ">
+                        <svg class="svg-icons mb-3" xmlns="http://www.w3.org/2000/svg" width="77" height="150"
+                            fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
                             <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z" />
                             <path
                                 d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z" />
                         </svg>
-                        <h2 class="text-center">São Paulo e Rio de Janeiro:</h2>
-                        <h4 class="text-center">2 a 3 horas por dia</h4>
-                        <h2 class="text-center">no trânsito em horários de pico</h2>
+                        <h5 class="text-center fs-6 fs-5">São Paulo e Rio de Janeiro:</h5>
+                        <h5 class="text-center fs-6 fs-5">2 a 3 horas por dia</h5>
+                        <h5 class="text-center fs-6 fs-5">no trânsito em horários de pico</h5>
                     </div>
-                    <div class="col">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="281" fill="currentColor"
-                            class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+                    <div class="row my-4">
+                        <svg class="svg-icons mb-3" xmlns="http://www.w3.org/2000/svg" width="77" height="150"
+                            fill="currentColor" class="bi bi-bus-front-fill" viewBox="0 0 16 16">
                             <path
                                 d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1v2ZM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4Zm-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z" />
                         </svg>
-                        <h2 class="text-center">Relatório anual de acidentes de trânsito:</h2>
-                        <h4 class="text-center">6.860 ocorrências</h4>
-                        <h2 class="text-center">no ano de 2021 em São Paulo</h2>
+                        <h5 class="text-center fs-6 fs-5">Relatório anual de acidentes de trânsito:</h5>
+                        <h5 class="text-center fs-6 fs-5">6.860 ocorrências</h5>
+                        <h5 class="text-center fs-6 fs-5">no ano de 2021 em São Paulo</h5>
                     </div>
-                    <div class="col">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="281" fill="currentColor"
-                            class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <div class="row">
+                        <svg class="svg-icons mb-3" xmlns="http://www.w3.org/2000/svg" width="77" height="150"
+                            fill="currentColor" class="bi bi-emoji-frown" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                             <path
                                 d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
                         </svg>
-                        <h2 class="text-center">Gás carbônico em carros à gasolina</h2>
-                        <h4 class="text-center">10kg a 25kg emitidos</h4>
-                        <h2 class="text-center">a cada 100km</h2>
+                        <h5 class="text-center fs-6 fs-5">Gás carbônico em carros à gasolina</h5>
+                        <h5 class="text-center fs-6 fs-5">10kg a 25kg emitidos</h5>
+                        <h5 class="text-center fs-6 fs-5">a cada 100km</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-7 col-lg-4 p-0 justify-content-end">
                 <img src="./images/image 4.png" alt="Imagem aérea de uma intersecção de uma avenida na China"
                     class="img-fluid imagem-h ml-auto mr-0">
             </div>
         </div>
-        <!-- <img src="./images/triângulo.svg" alt="Decoração separando áreas" class="bottomsep"> -->
+        
     </div>
 
 
-    <div class=" dobra" id="integrantes">
-        <h3 class="text-center">DontStop é um projeto criado por:</h3>
+    <div class=" dobra integrantes " id="integrantes">
+        <h3 class="text-center my-5 ">DontStop é um projeto criado por:</h3>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
                     <img src="./images/portraits/Cassio Valezzi.png" alt="Foto de Cassio Valezzi" class="img-fluid">
-                    <p>Cassio Valezzi</p>
+                    <h4 class="my-4 fs-5 fs-4">Cassio Valezzi</h4>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
                     <img src="./images/portraits/Octávio Hernandez.png" alt="Foto de Octávio Hernandez"
                         class="img-fluid">
-                    <p>Octávio Hernandez</p>
+                    <h4 class="my-4 fs-5 fs-4">Octávio Hernandez</h4>
                 </div>
                 <div class="w-100 d-md-none"></div>
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
                     <img src="./images/portraits/Italo de Souza.png" alt="Foto de Italo de Souza" class="img-fluid">
-                    <p>Italo de Souza</p>
+                    <h4 class="my-4 fs-5 fs-4">Italo de Souza</h4>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <img src="./images/portraits/Rafael Perussi.png" alt="Foto de Rafael Perussi" class="img-fluid">
-                    <p>Rafael Perussi</p>
+                    <h4 class="my-4 fs-5 fs-4">Rafael Perussi</h4>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- script do bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
