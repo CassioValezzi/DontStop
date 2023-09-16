@@ -13,6 +13,10 @@
     color: #EFF4EF !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-menu {
     box-shadow: 2px 2px 7px #5f5e5e;
     background-color: #5fa8d3;
@@ -124,10 +128,11 @@
     height: 3.5vw;
 
 }
-.estatísticas-justify-evenly{
+
+.estatísticas-justify-evenly {
     justify-content: space-evenly;
 }
 
-.footer-bg{
+.footer-bg {
     background-color: #192d39;
 }
