@@ -21,11 +21,6 @@
                    passarem por cima do header por conta do "filter" */
 }
 
-
-
-
-
-
 .container-main {
     height: 100vh;
 }
@@ -38,9 +33,11 @@
     background-image: url(../images/pexels-scott-webb-136739.jpg);
     background-size: cover;
 }
+
 .borda-no-texto {
-    text-shadow: 4px 1px 4px #000;/* Espaçamento interno para que a borda não toque diretamente no texto */
-  }
+    text-shadow: 4px 1px 4px #000;
+    /* Espaçamento interno para que a borda não toque diretamente no texto */
+}
 
 .problemas {
     background-color: #5FA8D3;
@@ -66,7 +63,6 @@
 
 .impactos {
     background-image: url(../images/pexels-luis-quintero-1587097.jpg);
-
 }
 
 .box {
@@ -74,7 +70,7 @@
     border-radius: 12px;
     background-color: #5FA8D366;
     backdrop-filter: blur(8px);
-    
+
 }
 
 .bg-color-box {
@@ -89,14 +85,7 @@
     background-color: #5fa8d3;
 }
 
-.wrapper {
-    width: 65%;
-    padding-right: 10%;
-    font-size: 1.5em;
-    background-color: #5fa8d3;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .estatística {
     margin: 0 10%;
@@ -106,22 +95,19 @@
 }
 
 
-
 .integrantes {
     background-color: #62b6cb;
     display: flex;
     flex-direction: column;
-    
+
 }
-
-
 
 .integrante {
     display: flex;
     width: 30vw;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .integrante>img {
@@ -133,6 +119,16 @@
     flex-direction: row-reverse;
 }
 
-.svg-icons{
+.svg-icons {
+    min-height: 70px;
     height: 3.5vw;
+
+}
+.estatísticas-justify-evenly{
+    justify-content: space-evenly;
+}
+
+.footer-config{
+    height: 15vh;
+    background-color: #192d39;
 }
