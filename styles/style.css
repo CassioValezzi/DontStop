@@ -29,9 +29,6 @@ html {
     height: 100vh;
 }
 
-.container-text-h {
-    height: 100vh;
-}
 
 .main {
     background-image: url(../images/pexels-scott-webb-136739.jpg);
@@ -48,11 +45,10 @@ html {
 
 }
 
-.ícones-problemas-img {
+.ícones-problemas {
     width: 50%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 
 
 .solução {
@@ -62,8 +58,6 @@ html {
 .imagem-h {
     height: 100vh;
 }
-
-
 
 .impactos {
     background-image: url(../images/pexels-luis-quintero-1587097.jpg);
@@ -85,17 +79,18 @@ html {
     list-style: square;
 }
 
-.estatísticas {
-    background-color: #5fa8d3;
+@media (max-width: 576px) {
+    .impactos li {
+        font-size: 12px !important;
+    }
+
+    .impactos h3 {
+        font-size: 18px !important;
+    }
 }
 
-
-
-.estatística {
-    margin: 0 10%;
-    height: 33.33%;
-    display: flex;
-    justify-content: space-around;
+.estatísticas {
+    background-color: #5fa8d3;
 }
 
 
@@ -106,31 +101,11 @@ html {
 
 }
 
-.integrante {
-    display: flex;
-    width: 30vw;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.integrante>img {
-    width: 16vh;
-}
-
-.integrante:nth-child(odd) {
-    align-self: flex-end;
-    flex-direction: row-reverse;
-}
 
 .svg-icons {
-    min-height: 70px;
+    min-height: 50px;
     height: 3.5vw;
 
-}
-
-.estatísticas-justify-evenly {
-    justify-content: space-evenly;
 }
 
 .footer-bg {
